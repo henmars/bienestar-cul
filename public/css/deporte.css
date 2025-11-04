@@ -1,0 +1,125 @@
+/* ==============================
+   ESTRUCTURA GENERAL
+============================== */
+.deporte-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+============================== */
+.deporte-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   BANNER
+============================== */
+.deporte-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* ==============================
+   TEXTO Y TABLA
+============================== */
+.deporte-text p {
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+}
+
+.deporte-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.deporte-table th,
+.deporte-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.deporte-table thead {
+  background-color: #dce3fa; /* azul suave acorde al nuevo color */
+}
+
+.deporte-table th {
+  color: #3051A0; /* azul principal */
+  font-weight: 700;
+}
+
+/* ==============================
+   LISTAS DE ACTIVIDADES
+============================== */
+.deporte-lista {
+  list-style: none;
+  padding-left: 0;
+  color: #333;
+  line-height: 1.8;
+}
+
+.deporte-lista li::before {
+  content: "• ";
+  color: #3051A0; /* azul principal */
+  font-weight: bold;
+}
+
+/* ==============================
+   COLORES TEMÁTICOS DE DEPORTE
+============================== */
+.text-deporte {
+  color: #3051A0; /* azul principal */
+}
+
+.table-deporte {
+  background-color: #dce3fa; /* azul claro */
+}
+
+/* ==============================
+   IMÁGENES Y QR
+============================== */
+.deporte-actividades-img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.qr-deporte {
+  width: 180px;
+  height: auto;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  .deporte-banner img {
+    height: 250px;
+  }
+
+  .deporte-lista {
+    padding-left: 15px;
+  }
+
+  .deporte-table th,
+  .deporte-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .deporte-actividades-img {
+    max-width: 100%;
+  }
+}

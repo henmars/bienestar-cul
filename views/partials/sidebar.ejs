@@ -1,0 +1,25 @@
+<%
+const safeActive = (typeof activePage !== 'undefined' && activePage) ? activePage : '';
+const safeThemeClass = (typeof themeClass !== 'undefined' && themeClass) ? themeClass : 'theme-default';
+
+const menuItems = [
+  { name: 'Permanencia y Graduación', link: '/permanencia', id: 'permanencia' },
+  { name: 'Deporte y Recreación',     link: '/deporte',      id: 'deporte' },
+  { name: 'Cultura',                  link: '/cultura',      id: 'cultura' },
+  { name: 'Salud',                    link: '/salud',        id: 'salud' },
+  { name: 'Inclusión',                link: '/inclusion',    id: 'inclusion' }
+];
+%>
+
+<aside class="sidebar d-flex flex-column align-items-start <%= safeThemeClass %>">
+  <% for (let i = 0; i < menuItems.length; i++) {
+       const item = menuItems[i];
+       const isActive = (safeActive === item.id);
+  %>
+    <a 
+      href="<%= item.link %>" 
+      class="sidebar-link <%= isActive ? 'active' : '' %>">
+      <%= item.name %>
+    </a>
+  <% } %>
+</aside>

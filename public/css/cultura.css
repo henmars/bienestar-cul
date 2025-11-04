@@ -1,0 +1,148 @@
+/* ==============================
+   ESTRUCTURA GENERAL
+============================== */
+.cultura-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+============================== */
+.cultura-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   BANNER
+============================== */
+.cultura-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* ==============================
+   TEXTO Y TABLA
+============================== */
+.cultura-text p {
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cultura-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.cultura-table th,
+.cultura-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cultura-table thead {
+  background-color: #cfe8ee; /* azul claro petróleo */
+}
+
+.cultura-table th {
+  color: #004059; /* color principal */
+  font-weight: 700;
+}
+
+/* ==============================
+   LISTAS DE ACTIVIDADES
+============================== */
+.cultura-lista {
+  list-style: none;
+  padding-left: 0;
+  color: #333;
+  line-height: 1.8;
+}
+
+.cultura-lista li::before {
+  content: "• ";
+  color: #007a99; /* tono intermedio */
+  font-weight: bold;
+}
+
+/* ==============================
+   COLORES TEMÁTICOS DE CULTURA
+============================== */
+.text-cultura {
+  color: #004059; /* azul petróleo */
+}
+
+.table-cultura {
+  background-color: #cfe8ee;
+}
+
+/* ==============================
+   IMÁGENES Y QR
+============================== */
+.cultura-actividades-img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.qr-cultura {
+  width: 180px;
+  height: auto;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  .cultura-banner img {
+    height: 250px;
+  }
+
+  .cultura-lista {
+    padding-left: 15px;
+  }
+
+  .cultura-table th,
+  .cultura-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cultura-actividades-img {
+    max-width: 100%;
+  }
+}
+
+/* ==============================
+   TEMA LATERAL CULTURA
+============================== */
+.theme-cultura .sidebar {
+  background-color: #e5f4f9; /* fondo muy claro */
+}
+
+.theme-cultura .sidebar-link {
+  background-color: #4f90a8; /* tono medio */
+  color: #fff;
+}
+
+.theme-cultura .sidebar-link:hover {
+  background-color: #2e6d83; /* más oscuro al hover */
+  color: #fff;
+}
+
+.theme-cultura .sidebar-link.active {
+  background-color: #004059; /* color principal */
+  border: 2px solid #002c3d;
+  color: #fff;
+}

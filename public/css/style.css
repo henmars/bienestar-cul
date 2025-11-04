@@ -1,0 +1,10 @@
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/static/img/banner.jpg') center/cover no-repeat;
+  border-radius: .5rem;
+  min-height: 200px;
+}
+.card img { object-fit: cover; height: 200px; }
+@media (max-width: 768px) {
+  .card img { height: 160px; }
+}

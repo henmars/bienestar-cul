@@ -1,0 +1,135 @@
+<div class="theme-deporte">
+    <div class="container-fluid deporte-page py-4">
+        <div class="row gx-5">
+
+            <!-- IMPORTAR SIDEBAR -->
+            <div class="col-md-3 col-lg-2">
+                <%- include('../partials/sidebar', { activePage: 'deporte', themeClass: 'theme-deporte' }) %>
+            </div>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <main class="col-md-9 col-lg-10 deporte-content">
+
+                <!-- BANNER -->
+                <section class="deporte-banner mb-4">
+                    <img src="/static/img/banner_deporte.jpg" class="img-fluid rounded shadow"
+                        alt="Banner Deporte y Recreación">
+                </section>
+
+                <!-- TEXTO PRINCIPAL -->
+                <section class="deporte-text">
+                    <p>
+                        Desde el eje de Bienestar Integral, en su área de <strong>Deporte y Recreación</strong>,
+                        promovemos la práctica deportiva, la actividad física y la recreación como pilares del bienestar
+                        de nuestra comunidad, a través de nuestras líneas <strong>formativa, competitiva y recreativa</strong>.
+                    </p>
+
+                    <!-- LÍNEAS DE ACCIÓN -->
+                    <h5 class="fw-bold mt-5 text-deporte text-center">
+                        Líneas de acción del área de Deporte y Recreación
+                    </h5>
+
+                    <div class="table-responsive mt-3">
+                        <table class="table table-bordered table-striped align-middle text-center deporte-table">
+                            <thead class="table-deporte">
+                                <tr>
+                                    <th>Línea</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Deporte formativo</td>
+                                    <td class="text-start">
+                                        Fortalecemos la cultura de salud física y el desarrollo integral mediante
+                                        procesos de iniciación, fundamentación y perfeccionamiento deportivo.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Deporte competitivo</td>
+                                    <td class="text-start">
+                                        Creamos espacios donde los estudiantes representan a la institución, potencian
+                                        su talento y desarrollan habilidades como la disciplina, la estrategia y la
+                                        cooperación.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Deporte recreativo</td>
+                                    <td class="text-start">
+                                        Promovemos actividades físicas y lúdicas que fomentan la integración, el
+                                        bienestar y el aprovechamiento saludable del tiempo libre.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- IMAGEN DE ACTIVIDADES -->
+                    <div class="text-center mt-5">
+                        <img src="/static/img/actividades_deporte.jpg"
+                            class="img-fluid rounded shadow-sm deporte-actividades-img"
+                            alt="Actividades de Deporte y Recreación">
+                    </div>
+
+                    <!-- ACTIVIDADES POR CATEGORÍA (2x2) -->
+                    <section class="mt-5 text-center">
+
+                        <div class="row gy-5">
+                            <!-- IZQUIERDA -->
+                            <div class="col-md-6">
+                                <!-- DEPORTE FORMATIVO -->
+                                <h5 class="fw-bold text-deporte mb-3">Deporte formativo</h5>
+                                <ul class="deporte-lista text-start d-inline-block">
+                                    <li>Fútbol sala</li>
+                                    <li>Karate-Do</li>
+                                    <li>Taekwondo</li>
+                                    <li>Esgrima</li>
+                                    <li>Baloncesto</li>
+                                </ul>
+
+                                <!-- DEPORTE RECREATIVO -->
+                                <h5 class="fw-bold text-deporte mt-5 mb-3">Deporte recreativo</h5>
+                                <ul class="deporte-lista text-start d-inline-block">
+                                    <li>Torneo de fútbol sala</li>
+                                    <li>Torneo de Karate-Do</li>
+                                    <li>Torneo de baloncesto</li>
+                                    <li>Torneo de voleibol</li>
+                                </ul>
+                            </div>
+
+                            <!-- DERECHA -->
+                            <div class="col-md-6">
+                                <!-- DEPORTE COMPETITIVO -->
+                                <h5 class="fw-bold text-deporte mb-3">Deporte competitivo</h5>
+                                <ul class="deporte-lista text-start d-inline-block">
+                                    <li>Fútbol sala</li>
+                                    <li>Karate-Do</li>
+                                    <li>Taekwondo</li>
+                                    <li>Baloncesto</li>
+                                </ul>
+
+                                <!-- ACTIVIDADES FÍSICAS -->
+                                <h5 class="fw-bold text-deporte mt-5 mb-3">Actividades físicas</h5>
+                                <ul class="deporte-lista text-start d-inline-block">
+                                    <li>Rumbaterapia</li>
+                                    <li>Pausa activa</li>
+                                    <li>Crossfit</li>
+                                    <li>Zona recreativa</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- QR DE INSCRIPCIÓN -->
+                        <div class="text-center mt-5">
+                            <h6 class="fw-bold text-secondary">Escanea el código para inscribirte en las clases deportivas:</h6>
+                            <img src="/static/img/qr_inscripcion_deportes.png" alt="QR Inscripción Deportes"
+                                class="qr-deporte mt-3 shadow-sm rounded">
+                        </div>
+
+                    </section>
+
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
