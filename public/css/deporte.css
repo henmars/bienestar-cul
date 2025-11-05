@@ -89,17 +89,41 @@
 }
 
 /* ==============================
-   IMÁGENES Y QR
+   IMÁGENES 
 ============================== */
 .deporte-actividades-img {
   max-width: 80%;
   border-radius: 10px;
 }
 
-.qr-deporte {
+/* ==============================
+   QR - MISMO DISEÑO QUE SALUD
+============================== */
+.deporte-qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.deporte-qr-card {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deporte-qr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(49, 85, 160, 0.2);
+}
+
+.deporte-qr-img {
   width: 180px;
   height: auto;
 }
+
 
 /* ==============================
    RESPONSIVE

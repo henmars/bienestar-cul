@@ -61,7 +61,7 @@
 }
 
 .salud-table thead {
-  background-color: #f8e1cc; /* tono claro del color principal */
+  background-color: #f8e1cc;
 }
 
 .salud-table th {
@@ -101,6 +101,80 @@
 }
 
 /* ==============================
+   QR CENTRADO
+============================== */
+.salud-qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.deporte-qr-card {
+  background-color: #f5f8ff;
+  /* azul muy claro de fondo */
+  border: 1px solid #c5d4f5;
+  /* borde suave */
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.salud-qr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(49, 85, 160, 0.25);
+}
+
+/* ==============================
+   QR - SALUD Y BIENESTAR
+============================== */
+.salud-qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.salud-qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.salud-qr-card {
+  background-color: #fff8f3;
+  /* fondo suave tipo crema */
+  border: 1px solid #f2d3b2;
+  /* borde color durazno claro */
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+}
+
+.salud-qr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(193, 103, 19, 0.25);
+}
+
+.salud-qr-img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-salud {
+  color: #c16713 !important;
+}
+
+/* ==============================
    RESPONSIVE
 ============================== */
 @media (max-width: 768px) {
@@ -112,5 +186,14 @@
   .salud-table td {
     font-size: 14px;
     padding: 8px;
+  }
+
+  .salud-qr-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .salud-qr-img {
+    width: 160px;
   }
 }
