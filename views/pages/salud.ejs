@@ -1,29 +1,142 @@
-<div class="row">
-  <div class="col-lg-8">
-    <article>
-      <h2>Salud</h2>
-      <p class="lead">El proceso de Salud del departamento de Bienestar Universitario, se encarga de velar por el cumplimiento del plan de atención médica...</p>
+<div class="theme-salud">
+  <div class="container-fluid salud-page py-4">
+    <div class="row gx-5">
 
-      <h4>Servicios</h4>
-      <ul>
-        <li>Atención primaria</li>
-        <li>Vacunación</li>
-        <li>Consejería y orientación</li>
-      </ul>
-
-      <p>Contenido adicional que reproduzca la profundidad de la página original.</p>
-    </article>
-  </div>
-
-  <aside class="col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <h6>Enlaces relacionados</h6>
-        <ul class="list-unstyled">
-          <li><a href="#">Protocolos y guías</a></li>
-          <li><a href="#">Servicios de salud</a></li>
-        </ul>
+      <!-- === SIDEBAR === -->
+      <div class="col-md-3 col-lg-2">
+        <%- include('../partials/sidebar', { activePage: 'salud' , themeClass: 'theme-salud' }) %>
       </div>
+
+      <!-- === CONTENIDO PRINCIPAL === -->
+      <main class="col-md-9 col-lg-10 salud-content">
+
+        <!-- BANNER -->
+        <section class="salud-banner mb-4">
+          <img src="/static/img/banner_salud.jpg" class="img-fluid rounded shadow" alt="Banner Salud">
+        </section>
+
+        <!-- TEXTO PRINCIPAL -->
+        <section class="salud-text">
+          <p>
+            Desde el eje de <strong>Bienestar Integral</strong>, en su área de <strong>Salud</strong>,
+            se promueve una cultura del autocuidado y hábitos saludables, garantizando la atención en emergencias
+            y desarrollando acciones de promoción y prevención que fortalecen el bienestar físico, mental
+            y emocional de nuestra comunidad.
+          </p>
+
+          <!-- TABLA DE LÍNEAS DE ACCIÓN Y ESTRATEGIAS -->
+          <h5 class="fw-bold mt-5 text-salud text-center">
+            Líneas de acción y estrategias del área de Salud
+          </h5>
+          <div class="table-responsive mt-3">
+            <table class="table table-bordered table-striped align-middle text-center salud-table">
+              <thead class="table-salud">
+                <tr>
+                  <th>Línea / Estrategia</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sexualidad responsable</td>
+                  <td class="text-start">
+                    Promueve el conocimiento y la toma de decisiones conscientes sobre la sexualidad,
+                    fortaleciendo los derechos sexuales y reproductivos, el autocuidado, el respeto
+                    y la equidad de género mediante acciones educativas y preventivas.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Salud al 100</td>
+                  <td class="text-start">
+                    Programa diseñado para promover estilos de vida saludables y prevenir enfermedades
+                    a través de actividades educativas, jornadas y campañas de bienestar.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Salud mental</td>
+                  <td class="text-start">
+                    Estrategia que busca promover el bienestar emocional, la detección temprana de riesgos
+                    psicosociales,
+                    orientación psicológica y formación en salud mental, para consolidar entornos educativos
+                    saludables y seguros.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Servicios y Atención en Salud</td>
+                  <td class="text-start">
+                    Brindamos acompañamiento, orientación y atención oportuna a toda la comunidad universitaria,
+                    promoviendo el bienestar integral.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- IMAGEN DE ACTIVIDADES -->
+          <div class="text-center mt-5">
+            <img src="/static/img/actividades_salud.png" class="img-fluid rounded shadow-sm salud-actividades-img"
+              alt="Actividades del área de salud">
+          </div>
+
+          <!-- LISTA DE ACTIVIDADES EN DOS COLUMNAS -->
+          <section class="mt-4 text-center">
+            <div class="row justify-content-center salud-actividades-lista mt-3">
+              <div class="col-md-5">
+                <ul class="salud-lista text-start d-inline-block">
+                  <li>Asesorías en planificación familiar</li>
+                  <li>Jornadas de prevención de ITS y embarazos no deseados</li>
+                  <li>Campaña de prevención del cáncer de mama</li>
+                  <li>Jornadas de salud, belleza y manejo del estrés</li>
+                  <li>Nutrición y alimentación saludable</li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <ul class="salud-lista text-start d-inline-block">
+                  <li>Tamizaje cardiovascular</li>
+                  <li>Prevención del consumo de sustancias psicoactivas</li>
+                  <li>Charlas de prevención y promoción de salud mental</li>
+                  <li>Espacios de escucha</li>
+                  <li>Primeros auxilios psicológicos</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICIOS Y ATENCIÓN EN SALUD -->
+          <section class="mt-5 text-center">
+            <h5 class="fw-bold text-salud mb-3">Servicios y atención en salud</h5>
+            <div class="row justify-content-center mt-3">
+              <div class="col-md-5">
+                <ul class="salud-lista text-start d-inline-block">
+                  <li>Asesorías médicas</li>
+                  <li>Asesorías y acompañamiento psicológico</li>
+                  <li>Atención por área protegida (AMI)</li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <ul class="salud-lista text-start d-inline-block">
+                  <li>Atención por cobertura de seguro estudiantil (HDI Seguros)</li>
+                  <li>Primeros auxilios en salud</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACTO -->
+          <section class="mt-5 text-center">
+            <h5 class="fw-bold text-salud mb-3">Contacto de Bienestar Integral</h5>
+            <p class="fs-5 text-center">
+              <i class="bi bi-telephone-fill text-salud me-2 "></i>
+              WhatsApp <a href="https://wa.me/573205321849" class="text-salud text-decoration-none fw-semibold"
+                target="_blank" rel="noopener noreferrer">
+                320 532 1849
+              </a>
+            </p>
+          </section>
+
+        </section>
+
+      </main>
     </div>
-  </aside>
+  </div>
 </div>

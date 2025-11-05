@@ -1,30 +1,91 @@
-<div class="row">
-  <div class="col-lg-8">
-    <article>
-      <h2>Inclusión</h2>
-      <p class="lead">Bienestar Universitario promueve espacios inclusivos y accesibles. Esta área busca garantizar la participación y el acompañamiento para estudiantes con diferentes necesidades.</p>
+<div class="theme-inclusion">
+  <div class="container-fluid inclusion-page py-4">
+    <div class="row gx-5">
 
-      <h4>Programas y servicios</h4>
-      <ul>
-        <li>Acompañamiento académico personalizado</li>
-        <li>Adaptaciones curriculares</li>
-        <li>Asesoría psicológica y social</li>
-      </ul>
-
-      <h4>Contacto</h4>
-      <p>Si requieres apoyo, comunícate a: inclusion@ul.edu.co</p>
-    </article>
-  </div>
-
-  <aside class="col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <h6>Recursos</h6>
-        <ul class="list-unstyled">
-          <li><a href="#">Solicitud de apoyo</a></li>
-          <li><a href="#">Protocolos de accesibilidad</a></li>
-        </ul>
+      <!-- === SIDEBAR === -->
+      <div class="col-md-3 col-lg-2">
+        <%- include('../partials/sidebar', { activePage: 'inclusion' , themeClass: 'theme-inclusion' }) %>
       </div>
+
+      <!-- === CONTENIDO PRINCIPAL === -->
+      <main class="col-md-9 col-lg-10 inclusion-content">
+
+        <!-- BANNER -->
+        <section class="inclusion-banner mb-4">
+          <img src="/static/img/banner_inclusion.jpg" class="img-fluid rounded shadow" alt="Banner Inclusión">
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="inclusion-intro mt-3">
+          <div class="row align-items-start g-4">
+
+            <!-- TEXTO IZQUIERDA -->
+            <div class="col-md-7">
+              <p class="text-justify">
+                El eje estratégico de inclusión, desde la estrategia <strong>CUL incluyente</strong>,
+                promueve una cultura institucional basada en la equidad, la empatía y el respeto por la diversidad.
+                Su propósito es garantizar el acceso, la participación, la permanencia y la graduación de estudiantes
+                pertenecientes a grupos de especial protección constitucional, fortaleciendo una comunidad educativa
+                más justa, solidaria e inclusiva.
+              </p>
+            </div>
+
+            <!-- CUADRO DERECHA -->
+            <div class="col-md-5">
+              <div class="inclusion-card shadow-sm">
+                <h5 class="fw-bold text-inclusion text-center mb-3">Grupos de Especial Protección Constitucional</h5>
+                <ul class="inclusion-lista text-start">
+                  <li>Personas con discapacidad</li>
+                  <li>Víctimas del conflicto armado</li>
+                  <li>Habitantes de zonas de frontera</li>
+                  <li>Grupos étnicos (Indígenas, afrocolombianos, raizales, palenqueros)</li>
+                  <li>Pueblos Rrom (Gitanos)</li>
+                  <li>Población LGBTIQ+</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACTIVIDADES -->
+        <section class="mt-5">
+          <h5 class="fw-bold text-inclusion text-center mb-4">
+            Actividades desarrolladas desde el eje estratégico de Inclusión
+          </h5>
+          <div class="row justify-content-center inclusion-actividades-lista mt-3">
+            <div class="col-md-5">
+              <ul class="inclusion-lista text-start d-inline-block">
+                <li>Orientaciones en ajustes razonables para el proceso de inclusión de estudiantes con discapacidad
+                </li>
+                <li>Seguimiento y acompañamiento a estudiantes con discapacidad</li>
+                <li>Capacitaciones sobre educación inclusiva y equidad de género</li>
+                <li>Eventos académicos de toma de conciencia sobre discapacidad e inclusión</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul class="inclusion-lista text-start d-inline-block">
+                <li>Jornadas de promoción de equidad y respeto por la diversidad</li>
+                <li>Espacios psicoeducativos a pares académicos de estudiantes con discapacidad</li>
+                <li>Club de Lengua de Señas Colombiana (en alianza con ASATLAN y el departamento de
+                  internacionalización)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="mt-5 text-center">
+          <h5 class="fw-bold text-inclusion mb-3">Contacto de Bienestar CUL:</h5>
+          <p class="fs-5 text-center">
+            <i class="bi bi-telephone-fill text-inclusion me-2 "></i>
+            WhatsApp <a href="https://wa.me/573172924939" class="text-inclusion text-decoration-none fw-semibold"
+              target="_blank" rel="noopener noreferrer">
+              317 292 4939
+            </a>
+          </p>
+        </section>
+
+      </main>
     </div>
-  </aside>
+  </div>
 </div>

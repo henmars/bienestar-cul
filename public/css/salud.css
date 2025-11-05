@@ -1,7 +1,7 @@
 /* ==============================
    ESTRUCTURA GENERAL
 ============================== */
-.permanencia-page {
+.salud-page {
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
@@ -10,7 +10,7 @@
 /* ==============================
    CONTENIDO PRINCIPAL
 ============================== */
-.permanencia-content {
+.salud-content {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -20,7 +20,7 @@
 /* ==============================
    BANNER
 ============================== */
-.permanencia-banner img {
+.salud-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -31,48 +31,48 @@
 /* ==============================
    TEXTO Y SECCIONES
 ============================== */
-.permanencia-text p {
+.salud-text p {
   text-align: justify;
   color: #333;
   line-height: 1.6;
 }
 
-.permanencia-text h5 {
-  color: #cfad00; /* nuevo dorado principal */
+.salud-text h5 {
+  color: #c16713;
   font-weight: 700;
 }
 
 /* ==============================
    TABLA DE LÍNEAS DE ACCIÓN
 ============================== */
-.permanencia-table {
+.salud-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 15px;
 }
 
-.permanencia-table th,
-.permanencia-table td {
+.salud-table th,
+.salud-table td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
   vertical-align: middle;
 }
 
-.permanencia-table thead {
-  background-color: #fff5b0; /* fondo dorado claro */
+.salud-table thead {
+  background-color: #f8e1cc; /* tono claro del color principal */
 }
 
-.permanencia-table th {
-  color: #222;
+.salud-table th {
+  color: #c16713;
   font-weight: 700;
 }
 
 /* ==============================
    IMAGEN DE ACTIVIDADES
 ============================== */
-.permanencia-actividades-img {
+.salud-actividades-img {
   max-width: 80%;
   border-radius: 10px;
 }
@@ -80,52 +80,36 @@
 /* ==============================
    LISTAS
 ============================== */
-.permanencia-lista {
+.salud-lista {
   list-style: none;
   padding-left: 0;
   color: #333;
   line-height: 1.8;
 }
 
-.permanencia-lista li::before {
+.salud-lista li::before {
   content: "• ";
-  color: #cfad00; /* nuevo dorado */
+  color: #c16713;
   font-weight: bold;
 }
 
 /* ==============================
    COLOR TEMÁTICO
 ============================== */
-.text-permanencia {
-  color: #cfad00;
+.text-salud {
+  color: #c16713;
 }
 
 /* ==============================
    RESPONSIVE
 ============================== */
 @media (max-width: 768px) {
-  .permanencia-row {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    position: static;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .sidebar-link {
-    flex: 1;
-    margin: 5px;
-  }
-
-  .permanencia-banner img {
+  .salud-banner img {
     height: 250px;
   }
 
-  .permanencia-table th,
-  .permanencia-table td {
+  .salud-table th,
+  .salud-table td {
     font-size: 14px;
     padding: 8px;
   }

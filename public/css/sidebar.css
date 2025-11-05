@@ -37,26 +37,29 @@
 /* === PERMANENCIA === */
 .theme-permanencia .sidebar {
   background-color: #fffbea;
+  /* fondo claro */
 }
 
 .theme-permanencia .sidebar-link {
-  background-color: #ffe066;
-  /* amarillo suave - inactivo */
+  background-color: #ffea80;
+  /* dorado claro - inactivo */
   color: #222;
 }
 
 .theme-permanencia .sidebar-link:hover {
-  background-color: #ffd43b;
-  /* más intenso al pasar el mouse */
+  background-color: #f7d944;
+  /* dorado más intenso al hover */
   color: #000;
 }
 
 .theme-permanencia .sidebar-link.active {
-  background-color: #c29500;
-  /* dorado corporativo - activo */
-  border: 2px solid #a67c00;
+  background-color: #cfad00;
+  /* color principal activo */
+  border: 2px solid #a38300;
+  /* borde oscuro */
   color: #fff;
 }
+
 
 
 /* === DEPORTE === */
@@ -78,18 +81,19 @@
 }
 
 .theme-deporte .sidebar-link.active {
-  background-color: #3051A0;
-  /* azul principal */
+  background-color: #3155A0;
+  /* azul principal actualizado */
   border: 2px solid #223b77;
   /* borde más oscuro del mismo tono */
   color: #fff;
 }
 
 
+
 /* === CULTURA === */
 .theme-cultura .sidebar {
-  background-color: #e5f4f9;
-  /* fondo muy claro */
+  background-color: #e6f3f7;
+  /* fondo muy claro con tono azul verdoso */
 }
 
 .theme-cultura .sidebar-link {
@@ -99,54 +103,72 @@
 }
 
 .theme-cultura .sidebar-link:hover {
-  background-color: #2e6d83;
+  background-color: #2d6d86;
   /* más oscuro al pasar el mouse */
   color: #fff;
 }
 
 .theme-cultura .sidebar-link.active {
-  background-color: #004059;
+  background-color: #004e72;
   /* color principal */
-  border: 2px solid #002c3d;
+  border: 2px solid #003952;
+  /* borde ligeramente más oscuro */
   color: #fff;
 }
 
 
+
 /* === SALUD === */
 .theme-salud .sidebar {
-  background-color: #e9fff0;
+  background-color: #fdf3eb;
+  /* fondo claro */
 }
 
 .theme-salud .sidebar-link {
-  background-color: #80e0a1;
+  background-color: #e28a3b;
+  /* tono medio */
+  color: #fff;
 }
 
 .theme-salud .sidebar-link:hover {
-  background-color: #5cd18a;
+  background-color: #c16713;
+  /* principal al hover */
+  color: #fff;
 }
 
 .theme-salud .sidebar-link.active {
-  background-color: #28a745;
-  border: 2px solid #1e7e34;
+  background-color: #c16713;
+  /* color principal */
+  border: 2px solid #a3540f;
+  color: #fff;
 }
 
 /* === INCLUSIÓN === */
 .theme-inclusion .sidebar {
-  background-color: #f3e9ff;
+  background-color: #f3f7ec;
+  /* fondo verde muy claro */
 }
 
 .theme-inclusion .sidebar-link {
-  background-color: #b388ff;
+  background-color: #a1b57a;
+  /* tono medio del color base */
+  color: #fff;
 }
 
 .theme-inclusion .sidebar-link:hover {
-  background-color: #9966ff;
+  background-color: #93a86e;
+  /* un poco más oscuro al pasar el mouse */
+  color: #fff;
 }
 
 .theme-inclusion .sidebar-link.active {
-  background-color: #6f42c1;
-  border: 2px solid #4b2999;
+  background-color: #869d5f;
+  /* color base principal */
+  border: 2px solid #6d844c;
+  /* borde más oscuro del mismo tono */
+  color: #fff;
 }
+
 
 /* === DEFAULT === */
 .theme-default .sidebar {

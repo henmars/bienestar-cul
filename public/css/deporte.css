@@ -53,11 +53,11 @@
 }
 
 .deporte-table thead {
-  background-color: #dce3fa; /* azul suave acorde al nuevo color */
+  background-color: #e1e6fb; /* azul muy claro de fondo */
 }
 
 .deporte-table th {
-  color: #3051A0; /* azul principal */
+  color: #3155A0; /* azul principal */
   font-weight: 700;
 }
 
@@ -73,7 +73,7 @@
 
 .deporte-lista li::before {
   content: "• ";
-  color: #3051A0; /* azul principal */
+  color: #3155A0; /* azul principal */
   font-weight: bold;
 }
 
@@ -81,11 +81,11 @@
    COLORES TEMÁTICOS DE DEPORTE
 ============================== */
 .text-deporte {
-  color: #3051A0; /* azul principal */
+  color: #3155A0; /* azul principal */
 }
 
 .table-deporte {
-  background-color: #dce3fa; /* azul claro */
+  background-color: #e1e6fb; /* azul claro */
 }
 
 /* ==============================
