@@ -30,7 +30,6 @@
 .banner {
   position: relative;
   height: 750px;
-  /*height: 420px*/
   border-radius: 15px;
   overflow: hidden;
   width: 100%;
@@ -56,17 +55,18 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
   width: 100%;
 }
 
 .flip-card {
   background: transparent;
   perspective: 1000px;
-  width: calc(20% - 20px);
-  min-width: 210px;
-  height: 330px;
+  width: 240px;
+  height: 320px;
+  flex: 0 1 240px;
 }
 
 .flip-card-inner {
@@ -91,12 +91,16 @@
   overflow: hidden;
 }
 
+/* Imagen nítida */
 .flip-card-front img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  border-radius: 15px;
 }
 
+/* Overlay del título */
 .card-title-overlay {
   position: absolute;
   bottom: 0;
@@ -105,16 +109,56 @@
   color: white;
   background: rgba(0, 0, 0, 0.55);
   padding: 8px 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
+/* ===============================
+   NUEVO REVERSO CON FONDO BORROSO
+================================= */
 .flip-card-back {
-  background: linear-gradient(135deg, #003366, #0055aa);
+  position: absolute;
+  inset: 0;
   color: white;
   transform: rotateY(180deg);
   text-align: center;
   border-radius: 15px;
-  overflow-y: auto;
-  padding-bottom: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Fondo borroso con la misma imagen */
+.flip-card-back::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(6px) brightness(0.8);
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+/* Capa de color oscura sobre el blur */
+.flip-card-back::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.flip-card-back > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* ===============================
@@ -144,15 +188,45 @@
 }
 
 /* ===============================
+   WHATSAPP CONTACTO HOVER
+================================= */
+.contacto-whatsapp p {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contacto-whatsapp p:hover {
+  color: #25d366;
+  transform: scale(1.03);
+  text-shadow: 0 0 8px rgba(37, 211, 102, 0.4);
+}
+
+/* ===============================
+   EFECTO GRUPOS ESPECIAL PROTECCIÓN
+================================= */
+.card-proteccion {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+
+.card-proteccion:hover {
+  box-shadow: 0 0 20px rgba(134, 157, 95, 0.8);
+  border-color: #869d5f;
+}
+
+/* ===============================
    RESPONSIVE
 ================================= */
 @media (max-width: 992px) {
   .banner {
     height: 340px;
   }
+
   .flip-card {
-    width: calc(33% - 20px);
-    height: 280px;
+    width: 220px;
+    height: 290px;
   }
 }
 
@@ -160,13 +234,16 @@
   .banner {
     height: 300px;
   }
+
   .flip-card {
     width: calc(50% - 20px);
     height: 260px;
   }
+
   .hero h1 {
     font-size: 1.8rem;
   }
+
   .hero p {
     font-size: 1rem;
   }
@@ -176,6 +253,7 @@
   .banner {
     height: 220px;
   }
+
   .flip-card {
     width: 100%;
     height: 220px;
