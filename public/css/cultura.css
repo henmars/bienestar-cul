@@ -29,12 +29,15 @@
 }
 
 /* ==============================
-   TEXTO Y TABLA
+   TEXTO PRINCIPAL
 ============================== */
 .cultura-text p {
   text-align: justify;
   color: #333;
   line-height: 1.6;
+  word-spacing: normal;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 /* ==============================
@@ -45,19 +48,27 @@
   padding-left: 0;
   color: #333;
   line-height: 1.8;
+  padding: 0;
+  margin: 0;
 }
 
 .cultura-lista li::before {
   content: "• ";
   color: #007a99; /* tono intermedio */
   font-weight: bold;
+  margin-bottom: 6px;
 }
 
 /* ==============================
    COLORES TEMÁTICOS DE CULTURA
 ============================== */
 .text-cultura {
-  color: #004e72; /* azul petróleo */
+  color: #0D468D; /* azul petróleo */
+}
+
+p.small {
+  line-height: 1.4;
+  text-align: justify;
 }
 
 .table-cultura {
@@ -78,6 +89,25 @@
 }
 
 /* ==============================
+   CLASES CULTURALES (Danza y Música)
+============================== */
+.titulo-sub {
+  font-size: 1.1rem; /* igual tamaño que “Actividades culturales” */
+  font-weight: 600;
+  color: #0D468D;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.parrafo-cultura {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* ==============================
    RESPONSIVE
 ============================== */
 @media (max-width: 768px) {
@@ -92,5 +122,13 @@
   .cultura-actividades-img {
     max-width: 100%;
   }
-}
 
+  .titulo-sub {
+    font-size: 1rem;
+  }
+
+  .parrafo-cultura {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}

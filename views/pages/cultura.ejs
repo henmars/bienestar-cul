@@ -1,7 +1,6 @@
 <div class="theme-cultura">
   <div class="container-fluid cultura-page py-4">
     <div class="row gx-5">
-
       <!-- IMPORTAR SIDEBAR -->
       <div class="col-md-3 col-lg-2">
         <%- include('../partials/sidebar', { activePage: 'cultura', themeClass: 'theme-cultura' }) %>
@@ -9,7 +8,6 @@
 
       <!-- CONTENIDO PRINCIPAL -->
       <main class="col-md-9 col-lg-10 cultura-content">
-
         <!-- BANNER -->
         <section class="cultura-banner mb-4">
           <img src="/static/img/banner_cultura.jpg" class="img-fluid rounded shadow" alt="Banner Cultura">
@@ -18,33 +16,49 @@
         <!-- TEXTO PRINCIPAL -->
         <section class="cultura-text">
           <p>
-            Desde el eje de Bienestar Integral, en su área de <strong>Cultura</strong>, promovemos el arte y las expresiones culturales,
-            a través de actividades y eventos artísticos fortaleciendo la identidad cultural, la creatividad, la autoestima y las habilidades
-            comunicativas, formando profesionales sensibles, expresivos y comprometidos con su entorno.
+            Desde el eje de Bienestar Integral, en su área de <strong>Cultura</strong>, promovemos el arte y las
+            expresiones culturales, a través de actividades y eventos artísticos que fortalecen la identidad cultural,
+            la creatividad, la autoestima y las habilidades comunicativas, formando profesionales sensibles, expresivos
+            y comprometidos con su entorno.
           </p>
 
           <!-- IMAGEN DE ACTIVIDADES -->
           <div class="text-center mt-5">
-            <img src="/static/img/actividades_cultura.jpg"
-              class="img-fluid rounded shadow-sm cultura-actividades-img"
+            <img src="/static/img/actividades_cultura.jpg" class="img-fluid rounded shadow-sm cultura-actividades-img"
               alt="Actividades culturales">
           </div>
 
-          <!-- SECCIÓN DIVIDIDA EN DOS COLUMNAS -->
+          <!-- SECCIÓN DE CLASES Y ACTIVIDADES -->
           <section class="mt-5 text-center">
             <div class="row gy-5">
               <!-- IZQUIERDA -->
               <div class="col-md-6">
-                <h5 class="fw-bold text-cultura mb-3">Clases culturales</h5>
-                <ul class="cultura-lista text-start d-inline-block">
-                  <li>Danza folclórica</li>
-                  <li>Música folclórica</li>
-                </ul>
+                <h5 class="fw-bold text-cultura mb-3 text-center">Clases culturales</h5>
+
+                <div class="row gx-4">
+                  <!-- Danza -->
+                  <div class="col-md-6">
+                    <h5 class="fw-bold text-cultura text-center titulo-sub">Danza folclórica</h5>
+                    <p class="text-muted parrafo-cultura">
+                      Espacio donde los participantes aprenden y practican diferentes estilos de danzas tradicionales,
+                      promoviendo la identidad y la expresión cultural.
+                    </p>
+                  </div>
+
+                  <!-- Música -->
+                  <div class="col-md-6">
+                    <h5 class="fw-bold text-cultura text-center titulo-sub">Música folclórica</h5>
+                    <p class="text-muted parrafo-cultura">
+                      Taller dedicado al aprendizaje de ritmos e instrumentos tradicionales, fortaleciendo las raíces
+                      culturales y el trabajo en grupo a través de la música.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <!-- DERECHA -->
               <div class="col-md-6">
-                <h5 class="fw-bold text-cultura mb-3">Actividades culturales</h5>
+                <h5 class="fw-bold text-cultura mb-3 text-center">Actividades culturales</h5>
                 <ul class="cultura-lista text-start d-inline-block">
                   <li>BU-merang</li>
                   <li>Noche de luna folclórica</li>
@@ -57,7 +71,6 @@
               </div>
             </div>
           </section>
-
         </section>
       </main>
     </div>
