@@ -40,6 +40,7 @@
   hyphens: auto;
 }
 
+
 /* ==============================
    LISTAS DE ACTIVIDADES
 ============================== */
@@ -54,7 +55,8 @@
 
 .cultura-lista li::before {
   content: "• ";
-  color: #007a99; /* tono intermedio */
+  color: #007a99;
+  /* tono intermedio */
   font-weight: bold;
   margin-bottom: 6px;
 }
@@ -63,7 +65,7 @@
    COLORES TEMÁTICOS DE CULTURA
 ============================== */
 .text-cultura {
-  color: #0D468D; /* azul petróleo */
+  color: #004e72;
 }
 
 p.small {
@@ -92,9 +94,10 @@ p.small {
    CLASES CULTURALES (Danza y Música)
 ============================== */
 .titulo-sub {
-  font-size: 1.1rem; /* igual tamaño que “Actividades culturales” */
+  font-size: 1.1rem;
+  /* igual tamaño que “Actividades culturales” */
   font-weight: 600;
-  color: #0D468D;
+  color: #004e72;
   text-align: center;
   margin-bottom: 0.4rem;
 }
