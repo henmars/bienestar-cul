@@ -112,7 +112,7 @@ p.small {
 ============================== */
 @media (max-width: 768px) {
   .cultura-banner img {
-    height: 250px;
+    max-height: 300px;
   }
 
   .cultura-lista {

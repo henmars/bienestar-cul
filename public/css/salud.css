@@ -179,7 +179,7 @@
 ============================== */
 @media (max-width: 768px) {
   .salud-banner img {
-    height: 250px;
+    max-height: 300px;
   }
 
   .salud-table th,

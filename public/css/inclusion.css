@@ -75,7 +75,7 @@
 ============================== */
 @media (max-width: 768px) {
   .inclusion-banner img {
-    height: 250px;
+    max-height: 300px;
   }
 
   .inclusion-card {

@@ -26,6 +26,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
+  
 }
 
 /* ==============================
@@ -153,7 +154,7 @@
   }
 
   .permanencia-banner img {
-    height: 250px;
+    max-height: 300px;
   }
 
   .permanencia-table th,
