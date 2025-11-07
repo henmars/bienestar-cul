@@ -2,11 +2,16 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const favicon = require('serve-favicon');
+
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Archivos estáticos
 app.use('/static', express.static(path.join(__dirname, 'public')));
+
+app.use(favicon(path.join(__dirname, 'public', 'img', 'faviconV2.ico')));
 
 // ===== RUTAS =====
 app.get('/', (req, res) => {
@@ -39,4 +44,9 @@ app.get('/inicio', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
+const HOST = '192.10.10.51'; // IP del contenedor
+
+app.listen(PORT, HOST, () => {
+  console.log(`✅ Server running on http://${HOST}:${PORT}`);
+});
+
