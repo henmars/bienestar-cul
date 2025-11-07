@@ -7,7 +7,8 @@
         <h1 class="display-6 fw-bold">¿Sabías qué?</h1>
         <p class="lead">
           Bienestar Universitario tiene como propósito principal brindar acompañamiento a la comunidad estudiantil a
-          través de diversas estrategias, con el fin de promover su formación y desarrollo integral, así como incentivar su permanencia
+          través de diversas estrategias, con el fin de promover su formación y desarrollo integral, así como incentivar
+          su permanencia
           y graduación. Además, procura el desarrollo humano e integral de todos los actores de la comunidad académica,
           concibiendo estos procesos como un mejoramiento continuo que busca garantizar el bienestar de cada persona
           vinculada a la CUL y satisfacer sus necesidades de manera integral.
@@ -36,34 +37,44 @@
     <!-- TARJETAS -->
     <section class="cards-section mb-5 text-center">
       <div class="cards-container">
-        <% const cards = [
-          { img: '/static/img/ficha_permanencia.png', title: 'Permanencia y Graduación', text: 'El proceso de permanencia y graduación de la Corporación Universitaria Latinoamericana (CUL) trabaja en el diseño y ejecución de estrategias para acompañar al estudiante en su paso por la institución, fomentando la culminación exitosa de sus estudios.', link: '/permanencia' },
-          { img: '/static/img/ficha_deporte.png', title: 'Deporte y Recreación', text: 'Desde la Vicerrectoría de Bienestar Universitario, el área de Deporte y Recreación fomenta la actividad física y el uso del tiempo libre como parte integral del bienestar estudiantil.', link: '/deporte' },
-          { img: '/static/img/ficha_cultura.png', title: 'Cultura', text: 'El área de Cultura promueve espacios de expresión artística, creatividad e identidad institucional a través de talleres, grupos y eventos culturales.', link: '/cultura' },
-          { img: '/static/img/ficha_salud.png', title: 'Salud', text: 'El proceso de Salud del Departamento de Bienestar Universitario vela por la atención integral y el bienestar físico y mental de nuestra comunidad universitaria.', link: '/salud' },
-          { img: '/static/img/ficha_inclusion.png', title: 'Inclusión', text: 'Promovemos la igualdad, el respeto y la accesibilidad para todos los miembros de la comunidad educativa.', link: '/inclusion' }
-        ]; %>
+        <% const cards=[ { img: '/static/img/ficha_permanencia.png' , title: 'Permanencia y Graduación' ,
+          text: 'El proceso de permanencia y graduación de la Corporación Universitaria Latinoamericana (CUL) trabaja en el diseño y ejecución de estrategias para acompañar al estudiante en su paso por la institución, fomentando la culminación exitosa de sus estudios.'
+          , link: '/permanencia' }, { img: '/static/img/ficha_deporte.png' , title: 'Deporte y Recreación' ,
+          text: 'Desde la Vicerrectoría de Bienestar Universitario, el área de Deporte y Recreación fomenta la actividad física y el uso del tiempo libre como parte integral del bienestar estudiantil.'
+          , link: '/deporte' }, { img: '/static/img/ficha_cultura.png' , title: 'Cultura' ,
+          text: 'El área de Cultura promueve espacios de expresión artística, creatividad e identidad institucional a través de talleres, grupos y eventos culturales.'
+          , link: '/cultura' }, { img: '/static/img/ficha_salud.png' , title: 'Salud' ,
+          text: 'El proceso de Salud del Departamento de Bienestar Universitario vela por la atención integral y el bienestar físico y mental de nuestra comunidad universitaria.'
+          , link: '/salud' }, { img: '/static/img/ficha_inclusion.png' , title: 'Inclusión' ,
+          text: 'Promovemos la igualdad, el respeto y la accesibilidad para todos los miembros de la comunidad educativa.'
+          , link: '/inclusion' } ]; %>
 
-        <% cards.forEach(card => { %>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="<%= card.img %>" class="img-fluid rounded shadow" alt="<%= card.title %>">
-                <div class="card-title-overlay">
-                  <h6><%= card.title %></h6>
+          <% cards.forEach(card=> { %>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="<%= card.img %>" class="img-fluid rounded shadow" alt="<%= card.title %>">
+                  <div class="card-title-overlay">
+                    <h6>
+                      <%= card.title %>
+                    </h6>
+                  </div>
                 </div>
-              </div>
-              <div class="flip-card-back d-flex flex-column justify-content-between align-items-center p-3"
-                style="--bg-img: url('<%= card.img %>'); background-image: var(--bg-img);">
-                <div>
-                  <h6 class="fw-bold mb-2"><%= card.title %></h6>
-                  <p class="small"><%= card.text %></p>
+                <div class="flip-card-back d-flex flex-column justify-content-between align-items-center p-3"
+                  style="--bg-img: url('<%= card.img %>'); background-image: var(--bg-img);">
+                  <div>
+                    <h6 class="fw-bold mb-2">
+                      <%= card.title %>
+                    </h6>
+                    <p class="small">
+                      <%= card.text %>
+                    </p>
+                  </div>
+                  <a class="btn btn-outline-light btn-sm mt-2" href="<%= card.link %>">Leer más</a>
                 </div>
-                <a class="btn btn-outline-light btn-sm mt-2" href="<%= card.link %>">Leer más</a>
               </div>
             </div>
-          </div>
-        <% }); %>
+            <% }); %>
       </div>
     </section>
 
@@ -103,7 +114,10 @@
             <div class="card-body">
               <h6>Contáctanos</h6>
               <p class="mb-0">
-                Bienestar Universitario - Ext. 1234<br>
+                Bienestar Universitario - <a href="https://wa.me/573172924939"
+                  class="text-dark text-decoration-none fw-semibold" target="_blank" rel="noopener noreferrer">
+                  317 292 4939
+                </a><br>
                 bienestar@ul.edu.co
               </p>
             </div>

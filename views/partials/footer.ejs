@@ -1,5 +1,59 @@
-<footer class="bg-dark text-white text-center py-3 mt-5">
+<footer class="footer text-white text-center py-3 mt-5">
   <div class="container">
-    <p class="mb-0">© <%= new Date().getFullYear() %> Corporación Universitaria Latinoamericana — Bienestar Universitario</p>
+    <p class="mb-0">
+      © <%= new Date().getFullYear() %> Corporación Universitaria Latinoamericana — Bienestar Universitario
+    </p>
   </div>
+
+  <!-- 🔹 Botón flotante de redes (solo escritorio) -->
+  <div class="floating-socials d-none d-md-flex">
+    <a href="https://wa.me/573172924939" target="_blank" class="float-btn"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.instagram.com/bienestarcul?igsh=cjM4czUyaXkyMzh3" target="_blank" class="float-btn"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1BkiAzUzYW/?mibextid=wwXIfr" target="_blank" class="float-btn"><i class="bi bi-facebook"></i></a>
+    <button id="scrollTopBtn" title="Subir">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+  </div>
+
+  <!-- 🔹 Menú inferior (solo móvil) -->
+  <nav class="mobile-bottom-nav d-flex d-md-none">
+    <a href="https://wa.me/573172924939" target="_blank" class="nav-item"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.instagram.com/bienestarcul?igsh=cjM4czUyaXkyMzh3" target="_blank" class="nav-item"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1BkiAzUzYW/?mibextid=wwXIfr" target="_blank" class="nav-item"><i class="bi bi-facebook"></i></a>
+  </nav>
+
+  <!-- 🔹 Botón subir (solo móvil, separado del menú) -->
+  <button id="scrollTopBtnMobile" title="Subir" class="d-md-none">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollBtnDesktop = document.getElementById("scrollTopBtn");
+      const scrollBtnMobile = document.getElementById("scrollTopBtnMobile");
+      const floatingSocials = document.querySelector(".floating-socials");
+
+      // 🔹 Mostrar redes sociales con efecto al cargar
+      if (floatingSocials) {
+        setTimeout(() => floatingSocials.classList.add("visible"), 200);
+      }
+
+      // 🔹 Ocultar botones de subir al inicio
+      if (scrollBtnDesktop) scrollBtnDesktop.classList.remove("visible");
+      if (scrollBtnMobile) scrollBtnMobile.classList.remove("visible");
+
+      // 🔹 Mostrar botones de subir al hacer scroll
+      window.addEventListener("scroll", function () {
+        const show = document.documentElement.scrollTop > 100 || document.body.scrollTop > 100;
+
+        if (scrollBtnDesktop) scrollBtnDesktop.classList.toggle("visible", show);
+        if (scrollBtnMobile) scrollBtnMobile.classList.toggle("visible", show);
+      });
+
+      // 🔹 Acción de subir suavemente
+      const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+      if (scrollBtnDesktop) scrollBtnDesktop.addEventListener("click", scrollToTop);
+      if (scrollBtnMobile) scrollBtnMobile.addEventListener("click", scrollToTop);
+    });
+  </script>
 </footer>

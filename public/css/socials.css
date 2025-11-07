@@ -1,0 +1,161 @@
+/* ===============================
+   FOOTER GENERAL
+================================= */
+.footer {
+  background-color: #0D468D;
+}
+
+/* ===============================
+   BOTONES FLOTANTES (ESCRITORIO)
+================================= */
+.floating-socials {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.floating-socials.visible {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.float-btn,
+#scrollTopBtn {
+  color: white;
+  background-color: rgba(13, 70, 141, 0.9);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.float-btn:hover,
+#scrollTopBtn:hover {
+  transform: scale(1.12);
+  background-color: #1e5ed1;
+}
+
+/* ===============================
+   BOTÓN SUBIR MÓVIL
+================================= */
+#scrollTopBtnMobile {
+  display: flex;
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
+  z-index: 1300;
+  background: #0D468D;
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#scrollTopBtnMobile:hover {
+  background: #1e5ed1;
+  transform: scale(1.1);
+}
+
+#scrollTopBtn i,
+#scrollTopBtnMobile i {
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+/* ===============================
+   MENÚ INFERIOR MÓVIL
+================================= */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #0D468D, #1e5ed1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 8px;
+  z-index: 1200;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  backdrop-filter: blur(6px);
+}
+
+.mobile-bottom-nav .nav-item {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  flex: 1;
+}
+
+.mobile-bottom-nav .nav-item:hover,
+.mobile-bottom-nav .nav-item:focus {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .floating-socials {
+    display: none !important;
+  }
+}
+
+/* ===============================
+   ANIMACIÓN DE APARICIÓN
+================================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#scrollTopBtn,
+#scrollTopBtnMobile {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#scrollTopBtn.visible,
+#scrollTopBtnMobile.visible {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeInUp 0.5s ease forwards;
+}
