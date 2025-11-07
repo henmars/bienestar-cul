@@ -133,46 +133,6 @@
   height: auto;
 }
 
-/* ==============================
-   CARRUSEL DE DEPORTE
-============================== */
-.deporte-carousel {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel-inner {
-  border-radius: 12px;
-  overflow: hidden;
-  height: 400px; /* altura fija estándar */
-  background-color: #000;
-}
-
-.carousel-item {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-}
-
-/* Indicadores y controles */
-.carousel-indicators [data-bs-target] {
-  background-color: #3155A0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
 
 /* ==============================
    RESPONSIVE
@@ -196,7 +156,4 @@
     max-width: 100%;
   }
 
-  .carousel-inner {
-    height: 250px; /* altura fija en móvil */
-  }
 }

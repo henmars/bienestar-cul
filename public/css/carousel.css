@@ -1,0 +1,59 @@
+/* ==============================
+   CARRUSEL ESTÁNDAR PARA TODAS LAS FICHAS
+============================== */
+.ficha-carousel {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+.ficha-carousel .carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px; /* altura desktop */
+  background-color: #000; /* fondo mientras cargan */
+}
+
+.ficha-carousel .carousel-item {
+  height: 100%;
+}
+
+.ficha-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ocupa todo el contenedor */
+  object-position: center;
+  display: block;
+}
+
+.ficha-carousel .carousel-indicators [data-bs-target] {
+  background-color: #3155A0;
+}
+
+.ficha-carousel .carousel-control-prev-icon,
+.ficha-carousel .carousel-control-next-icon {
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 992px) {
+  .ficha-carousel .carousel-inner {
+    height: 300px; /* tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .ficha-carousel .carousel-inner {
+    height: 250px; /* móvil */
+  }
+}
+
+@media (max-width: 576px) {
+  .ficha-carousel .carousel-inner {
+    height: 200px; /* móvil pequeño */
+  }
+}
