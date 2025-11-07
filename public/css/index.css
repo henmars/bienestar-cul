@@ -242,6 +242,12 @@
     width: 220px;
     height: 290px;
   }
+
+    .info-section {
+    max-width: 95%;
+    padding: 2rem 3rem;
+    
+  }
 }
 
 @media (max-width: 768px) {
@@ -261,11 +267,14 @@
   .hero p,
   .info-section p {
     font-size: 1rem;
+    
   }
 
   .info-section {
     max-width: 95%;
     padding: 2rem;
+    padding: 1.8rem 2.5rem; /* ajusta padding en móvil */
+    
   }
 }
 
@@ -284,8 +293,12 @@
   }
 
   .info-section {
-    padding: 1.5rem;
-    margin: 25px 0;
-    width: calc(100% - 30px);
+    padding: 1.5rem 1rem;;
+    margin: 25px auto;
+    width: calc(100% - 20px);   
+  }
+
+    .info-section p {
+    font-size: 0.95rem;
   }
 }
