@@ -1,14 +1,14 @@
 /* ==============================
-   SIDEBAR BASE
+   SIDEBAR GENERAL
 ============================== */
 .sidebar {
   background-color: #ffffff;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   position: sticky;
   top: 100px;
   height: fit-content;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar-link {
@@ -21,169 +21,61 @@
   border-radius: 8px;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
   color: #fff;
 }
 
-/* Estados generales */
 .sidebar-link:hover {
   transform: scale(1.03);
-  filter: brightness(1.1);
+  filter: brightness(1.05);
 }
 
 /* ==============================
-   COLORES POR TEMA
+   COLORES POR ITEM
 ============================== */
 
-/* === PERMANENCIA === */
-.theme-permanencia .sidebar {
-  background-color: #fffbea;
-  /* fondo claro */
-}
-
-.theme-permanencia .sidebar-link {
-  background-color: #ffea80;
-  /* dorado claro - inactivo */
-  color: #222;
-}
-
-.theme-permanencia .sidebar-link:hover {
-  background-color: #f7d944;
-  /* dorado más intenso al hover */
-  color: #000;
-}
-
-.theme-permanencia .sidebar-link.active {
-  background-color: #cfad00;
-  /* color principal activo */
-  border: 2px solid #a38300;
-  /* borde oscuro */
-  color: #fff;
-}
-
-
-
-/* === DEPORTE === */
-.theme-deporte .sidebar {
-  background-color: #e7ebfb;
-  /* fondo suave azulado */
-}
-
-.theme-deporte .sidebar-link {
-  background-color: #5b74c4;
-  /* tono medio del azul principal */
-  color: #fff;
-}
-
-.theme-deporte .sidebar-link:hover {
-  background-color: #4560b5;
-  /* un poco más oscuro al pasar el mouse */
-  color: #fff;
-}
-
-.theme-deporte .sidebar-link.active {
-  background-color: #3155A0;
-  /* azul principal actualizado */
-  border: 2px solid #223b77;
-  /* borde más oscuro del mismo tono */
-  color: #fff;
-}
-
-
-
 /* === CULTURA === */
-.theme-cultura .sidebar {
-  background-color: #e6f3f7;
-  /* fondo muy claro con tono azul verdoso */
+.sidebar-link.cultura {
+  background-color: #c6dde5; /* azul verdoso claro */
 }
-
-.theme-cultura .sidebar-link {
-  background-color: #4f90a8;
-  /* tono medio del color principal */
+.sidebar-link.cultura.active {
+  background-color: #004e72; /* azul base */
   color: #fff;
 }
 
-.theme-cultura .sidebar-link:hover {
-  background-color: #2d6d86;
-  /* más oscuro al pasar el mouse */
+/* === PERMANENCIA === */
+.sidebar-link.permanencia {
+  background-color: #f9edb0; /* dorado pastel equilibrado */
   color: #fff;
 }
-
-.theme-cultura .sidebar-link.active {
-  background-color: #004e72;
-  /* color principal */
-  border: 2px solid #003952;
-  /* borde ligeramente más oscuro */
-  color: #fff;
-}
-
-
-
-/* === SALUD === */
-.theme-salud .sidebar {
-  background-color: #fdf3eb;
-  /* fondo claro */
-}
-
-.theme-salud .sidebar-link {
-  background-color: #e28a3b;
-  /* tono medio */
-  color: #fff;
-}
-
-.theme-salud .sidebar-link:hover {
-  background-color: #c16713;
-  /* principal al hover */
-  color: #fff;
-}
-
-.theme-salud .sidebar-link.active {
-  background-color: #c16713;
-  /* color principal */
-  border: 2px solid #a3540f;
+.sidebar-link.permanencia.active {
+  background-color: #cfad00; /* dorado fuerte */
   color: #fff;
 }
 
 /* === INCLUSIÓN === */
-.theme-inclusion .sidebar {
-  background-color: #f3f7ec;
-  /* fondo verde muy claro */
+.sidebar-link.inclusion {
+  background-color: #d8e2c3; /* verde oliva claro */
 }
-
-.theme-inclusion .sidebar-link {
-  background-color: #a1b57a;
-  /* tono medio del color base */
+.sidebar-link.inclusion.active {
+  background-color: #869d5f; /* verde base */
   color: #fff;
 }
 
-.theme-inclusion .sidebar-link:hover {
-  background-color: #93a86e;
-  /* un poco más oscuro al pasar el mouse */
+/* === DEPORTE === */
+.sidebar-link.deporte {
+  background-color: #c2cceb; /* azul suave */
+}
+.sidebar-link.deporte.active {
+  background-color: #3155a0; /* azul principal */
   color: #fff;
 }
 
-.theme-inclusion .sidebar-link.active {
-  background-color: #869d5f;
-  /* color base principal */
-  border: 2px solid #6d844c;
-  /* borde más oscuro del mismo tono */
+/* === SALUD === */
+.sidebar-link.salud {
+  background-color: #f7caa5; /* naranja claro */
+}
+.sidebar-link.salud.active {
+  background-color: #c16713; /* naranja fuerte */
   color: #fff;
-}
-
-
-/* === DEFAULT === */
-.theme-default .sidebar {
-  background-color: #f5f5f5;
-}
-
-.theme-default .sidebar-link {
-  background-color: #cccccc;
-}
-
-.theme-default .sidebar-link:hover {
-  background-color: #bfbfbf;
-}
-
-.theme-default .sidebar-link.active {
-  background-color: #999999;
-  border: 2px solid #666666;
 }

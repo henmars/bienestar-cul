@@ -44,7 +44,7 @@ app.get('/inicio', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-const HOST = 'localhost'; // IP del contenedor
+const HOST = '192.10.10.51'; // IP del contenedor
 
 app.listen(PORT, HOST, () => {
   console.log(`✅ Server running on http://${HOST}:${PORT}`);
