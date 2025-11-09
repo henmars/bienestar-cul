@@ -36,46 +36,93 @@
 
 /* === CULTURA === */
 .sidebar-link.cultura {
-  background-color: #c6dde5; /* azul verdoso claro */
+  background-color: #c6dde5;
+  /* azul verdoso claro */
 }
+
+.sidebar-link.cultura:hover {
+  background-color: #004e72;
+  color: #fff;
+}
+
 .sidebar-link.cultura.active {
-  background-color: #004e72; /* azul base */
+  background-color: #004e72;
+  /* azul base */
   color: #fff;
 }
 
 /* === PERMANENCIA === */
 .sidebar-link.permanencia {
-  background-color: #f9edb0; /* dorado pastel equilibrado */
+  background-color: #f9edb0;
+  /* dorado pastel equilibrado */
   color: #fff;
 }
+
+.sidebar-link.permanencia:hover {
+  background-color: #cfad00;
+  /* dorado fuerte */
+  color: #fff;
+}
+
 .sidebar-link.permanencia.active {
-  background-color: #cfad00; /* dorado fuerte */
+  background-color: #cfad00;
+  /* dorado fuerte */
   color: #fff;
 }
 
 /* === INCLUSIÓN === */
 .sidebar-link.inclusion {
-  background-color: #d8e2c3; /* verde oliva claro */
+  background-color: #d8e2c3;
+  /* verde oliva claro */
+  color: #fff;
 }
+
+.sidebar.link.inclusion:hover {
+  background-color: #869d5f;
+  /* verde base */
+  color: #fff;
+}
+
 .sidebar-link.inclusion.active {
-  background-color: #869d5f; /* verde base */
+  background-color: #869d5f;
+  /* verde base */
   color: #fff;
 }
 
 /* === DEPORTE === */
 .sidebar-link.deporte {
-  background-color: #c2cceb; /* azul suave */
+  background-color: #c2cceb;
+  /* azul suave */
+  color: #fff;
 }
+
+.sidebar-link.deporte:hover {
+  background-color: #3155a0;
+  /* azul principal */
+  color: #fff;
+}
+
 .sidebar-link.deporte.active {
-  background-color: #3155a0; /* azul principal */
+  background-color: #3155a0;
+  /* azul principal */
   color: #fff;
 }
 
 /* === SALUD === */
 .sidebar-link.salud {
-  background-color: #f7caa5; /* naranja claro */
+  background-color: #f7caa5;
+  /* naranja claro */
+  color: #fff;
 }
+
+.sidebar-link.salud:hover {
+  background-color: #c16713;
+  /* naranja fuerte */
+  color: #fff;
+}
+
 .sidebar-link.salud.active {
-  background-color: #c16713; /* naranja fuerte */
+  background-color: #c16713;
+  /* naranja fuerte */
   color: #fff;
 }
